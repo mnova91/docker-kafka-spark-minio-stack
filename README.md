@@ -69,6 +69,27 @@ Other dependencies (Node.js, Docker, etc.) are noted in the relevant files.
 
 This project is licensed under the MIT License.
 
+## Architecture Overview
+
+```mermaid
+flowchart TD
+  A[Data Production: producer.py / Node.js] --> B[Kafka: Message Broker]
+  B --> C[Kafka Connect: connector-config.json]
+  C --> D[S3 Sink Connector: s3-sink-connector.json]
+  D --> E[MinIO: S3-Compatible Storage]
+  B --> F[Spark Streaming: streaming_job.py]
+  F --> E
+  G[Setup: Docker Compose + .env Config] --> B
+  G --> C
+  E --> H[Analysis Tools: pandas, Spark SQL]
+  I[End-to-End Pipeline: Ingest → Stream → Store → Analyze]
+  A --> I
+  B --> I
+  F --> I
+  E --> I
+  H --> I
+```
+
 ---
 
 **Disclaimer:**  
