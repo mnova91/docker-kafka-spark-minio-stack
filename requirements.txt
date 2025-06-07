@@ -1,0 +1,4 @@
+Flask==2.0.1
+kafka-python==2.0.2
+confluent-kafka==2.3.0
+pyspark==3.4.0

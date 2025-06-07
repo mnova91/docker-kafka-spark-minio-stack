@@ -1,0 +1,14 @@
+{
+  "name": "docker-kafka-spark-minio-stack",
+  "version": "1.0.0",
+  "description": "A project that utilizes a file stream connector.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "setup": "bash scripts/setup.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
