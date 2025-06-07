@@ -1,5 +1,3 @@
-# docker-connector-app/README.md
-
 # Docker Connector Application
 
 This is a **personal project** for learning and experimentation with Docker, Kafka, Spark, and MinIO.  
