@@ -1,4 +1,4 @@
-# docker-connector-app/docker-connector-app/README.md
+# docker-connector-app/README.md
 
 # Docker Connector Application
 
